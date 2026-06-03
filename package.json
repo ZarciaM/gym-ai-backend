@@ -6,14 +6,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev:server": "tsx watch src/index.ts",
-    "postinstall": "prisma generate"
+    "postinstall": "prisma generate",
+    "build": "prisma generate && next build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "@prisma/adapter-pg": "^7.4.0",
+    "@prisma/adapter-pg": "^7.8.0",
     "@prisma/client": "^7.4.0",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.6",
